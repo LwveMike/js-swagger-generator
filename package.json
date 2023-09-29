@@ -4,43 +4,23 @@
   "description": "Swagger api generator for js",
   "main": "index.js",
   "scripts": {
-    "test": "test",
-    "generate": "node bin/js-swagger -u -p -f ${PWD}/sources/swagger.v3.yml -d ${PWD}/tests",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "test": "node bin/js-swagger -u -p -f ${PWD}/sources/swagger.v3.yml -d ${PWD}/tests"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maxvanceffer/js-swagger-generator.git"
   },
-  "keywords": [
-    "swagger-api",
-    "swagger-generator",
-    "js-generator",
-    "swagger-codegen",
-    "swagger"
-  ],
-  "author": "Maxim Gnidac",
+  "author": "lwvemike",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/maxvanceffer/js-swagger-generator/issues"
-  },
-  "homepage": "https://github.com/maxvanceffer/js-swagger-generator#readme",
-  "contributors": [
-    "Maxim Gnidac <maxvanceffer@gmail.com> (http://noction.com)"
-  ],
   "dependencies": {
     "commander": "^7.2.0",
-    "eslint": "^7.22.0",
     "js-beautify": "^1.13.5",
     "js-yaml": "^4.0.0",
     "lodash": "^4.17.21",
     "semver": "^7.3.5",
-    "twig": "^1.15.4",
-    "snyk": "^1.509.0"
+    "twig": "^1.15.4"
   },
   "bin": {
     "js-swagger": "bin/js-swagger"
-  },
-  "snyk": true
+  }
 }
